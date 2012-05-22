@@ -74,7 +74,7 @@ public class Counter
 
 	public static void printCount(String key)
 	{
-		raykernel.io.Out.println(key + " : " + getCount(key));
+		System.out.println(key + " : " + getCount(key));
 	}
 
 	public static void printDist(String key)
@@ -83,11 +83,11 @@ public class Counter
 
 		if (d == null)
 		{
-			raykernel.io.Out.println(key + " : not seen");
+			System.out.println(key + " : not seen");
 		}
 		else
 		{
-			raykernel.io.Out.println(key + " : " + d);
+			System.out.println(key + " : " + d);
 		}
 	}
 

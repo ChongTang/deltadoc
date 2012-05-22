@@ -29,7 +29,6 @@ public class Tools
 
 		if (!wd.exists())
 		{
-			raykernel.io.Out.println("creating dir: " + wd);
 			wd.mkdir();
 		}
 
@@ -43,7 +42,7 @@ public class Tools
 
 	public static void printTime()
 	{
-		raykernel.io.Out.println("TIMESTAMP: " + new Date());
+		System.out.println("TIMESTAMP: " + new Date());
 	}
 
 	public static Collection<String> makeCollection(String... ks)

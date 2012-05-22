@@ -5,7 +5,8 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
-import mimimize.MinimizedTable;
+import minimize.MinimizedTable;
+
 import raykernel.lang.dom.condition.AndCondition;
 import raykernel.lang.dom.condition.Condition;
 import raykernel.lang.dom.condition.OrCondition;
@@ -62,7 +63,7 @@ public class ConditionSimplifier
 		Condition decoded = decodeCondition(minimised, symbolTable);
 		
 		//System.out.println("  decoded: " + decoded);
-		
+		 
 		Condition flattened = flatten(decoded);
 		
 		//System.out.println("  flattened: " + flattened);
