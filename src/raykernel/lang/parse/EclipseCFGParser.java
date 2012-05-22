@@ -45,9 +45,9 @@ public class EclipseCFGParser
 				CFG cfg = CFG.buildCFG(method);
 				
 				// **** Printing DOT ****
-				CFGToDot toDot = new CFGToDot();
-				String dot = toDot.toDot(cfg);
-				System.out.println(dot);
+				//CFGToDot toDot = new CFGToDot();
+				//String dot = toDot.toDot(cfg);
+				//System.out.println(dot);
 				
 				methodSig.setCFG(cfg);
 				cd.addMethod(methodSig);

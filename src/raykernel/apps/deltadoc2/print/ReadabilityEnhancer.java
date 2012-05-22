@@ -1,15 +1,10 @@
-package raykernel.lang.dom.condition;
-
-import raykernel.config.Config;
+package raykernel.apps.deltadoc2.print;
 
 public class ReadabilityEnhancer
 {
 
 	public static String enhance(String in)
 	{
-		if (!Config.getBoolean("policy-readenhance"))
-			return in;
-
 		String out = in.replace(".iterator().hasNext()", " non empty");
 		out = out.replace(".iterator().next()", "->{some element}");
 		out = out.replace(".this$0.", ".");

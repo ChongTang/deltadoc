@@ -5,17 +5,19 @@ import raykernel.lang.dom.expression.InvocationExpression;
 import raykernel.lang.dom.statement.ExpressionStatement;
 import raykernel.lang.dom.statement.ReturnStatement;
 import raykernel.lang.dom.statement.Statement;
+import raykernel.lang.dom.statement.ThrowStatement;
 
 public class Policy
 {
 	/**
 	 * Which statements should be documented?
-	 * @param s
-	 * @return
 	 */
 	public static boolean mustDoc(Statement s)
 	{
 		if (s instanceof ReturnStatement)
+			return true;
+		
+		if (s instanceof ThrowStatement)
 			return true;
 		
 		if (s instanceof ExpressionStatement)
