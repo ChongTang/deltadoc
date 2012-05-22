@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Set;
 
 import raykernel.lang.dom.expression.Expression;
-import raykernel.lang.dom.naming.ToolBox;
+import raykernel.util.Tools;
 
 public class OrCondition extends Condition implements Iterable<Condition>
 {
@@ -106,7 +106,7 @@ public class OrCondition extends Condition implements Iterable<Condition>
 	@Override
 	public String toString()
 	{
-		return ToolBox.stringifyList(conditions, "||");
+		return Tools.stringifyList(conditions, "||");
 	}
 	
 	@Override
