@@ -11,8 +11,8 @@ import raykernel.lang.dom.condition.AndCondition;
 import raykernel.lang.dom.condition.Condition;
 import raykernel.lang.dom.condition.OrCondition;
 import raykernel.lang.dom.expression.True;
-import raykernel.lang.dom.naming.ToolBox;
 import raykernel.util.Regex;
+import raykernel.util.Tools;
 
 public class ConditionSimplifier
 {
@@ -97,13 +97,13 @@ public class ConditionSimplifier
 		{
 			List<String> encodedList = encodeList(((AndCondition) inputCond).getConditions(), symbolTable);
 			
-			return "( " + ToolBox.stringifyList(encodedList, "*") + " )";
+			return "( " + Tools.stringifyList(encodedList, "*") + " )";
 		}
 		else if (inputCond instanceof OrCondition)
 		{
 			List<String> encodedList = encodeList(((OrCondition) inputCond).getConditions(), symbolTable);
 			
-			return "( " + ToolBox.stringifyList(encodedList, "+") + " )";
+			return "( " + Tools.stringifyList(encodedList, "+") + " )";
 		}
 		else
 			return symbolTable.getSymbol(inputCond);
