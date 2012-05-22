@@ -1,0 +1,2 @@
+#!/bin/bash
+java -cp deltadoc.jar:$(for i in lib/*.jar ; do echo -n $i: ; done). raykernel.apps.deltadoc2.Main $1 $2 $3
