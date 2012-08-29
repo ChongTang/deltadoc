@@ -11,7 +11,7 @@ import raykernel.apps.deltadoc2.hierarchical.PredicateNode;
 import raykernel.apps.deltadoc2.hierarchical.RootNode;
 
 /**
- * makes a dtree <http://destroydrop.com/javascripts/tree/> version of the deltadoc
+ * makes a dtree <http://destroydrop.com/javascripts/tree> version of the deltadoc
  * @author buse
  *
  *

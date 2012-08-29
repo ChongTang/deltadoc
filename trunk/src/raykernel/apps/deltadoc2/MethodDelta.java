@@ -52,9 +52,10 @@ public class MethodDelta
 		this.methodSig = methodSig;
 	}
 	
+	//BUG FOUND HERE
 	public boolean isEmpty()
 	{
-		return predToStmtMap.isEmpty() && stmtToPredMap.isEmpty() & addedStmts.isEmpty() && removedStmts.isEmpty();
+		return predToStmtMap.isEmpty() && stmtToPredMap.isEmpty() && addedStmts.isEmpty() && removedStmts.isEmpty();
 	}
 	
 	public static MethodDelta computeDelta(MethodRecord r1, MethodRecord r2)
